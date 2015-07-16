@@ -1,11 +1,17 @@
-class hw32 {
-	public static void main (String[]args){
+class hw32
+ {
+	public static void main (String[]args)
+	{
 		double a = Double.parseDouble(args[0]);
 		int n = Integer.parseInt(args[1]);
-		double x = 1-a+a*a-a*a*a;
-		for (int i = 4;i<=n;i++){
-			
+		int b=1;
+		int c=1;
+		for (int i = 1;i<=n;i++)
+		{
+			c*=(-a);
+			b+=c;
 		}
+		System.out.println (b);
 	}
-} // я честно не понимаю формулу к этой задачи, там точно нету ошибки в самой формуле в дз????
+} 
 
