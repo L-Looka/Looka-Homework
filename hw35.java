@@ -7,7 +7,7 @@ class hw35 {
 		do {
 			s=(s*p)/100+s;
 			k++;
-		} while (s<=1100.0);
+		} while (s<1100.0);
 			System.out.println (k);
 		} else {
 			System.out.println ("Please enter interest rate between 0 and 25%");

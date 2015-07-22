@@ -2,10 +2,10 @@ class hw30{
 	public static void main (String[]args){
 		int a = Integer.parseInt(args[0]);
 		int b = Integer.parseInt(args[1]);
-		int prod =1;
+		int mult=1;
 		for (int i=a;i<=b;i++){
-			prod*=i;
+			mult*=i;
 		}
-		System.out.println (prod);
+		System.out.println (mult);
 	}
 }
