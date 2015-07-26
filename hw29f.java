@@ -23,8 +23,7 @@ class hw29f{
 	public static void main (String[]args)
 	{
 		int a = Integer.parseInt(args[0]);
-		int b = Integer.parseInt(args[1]);
-		
+		int b = Integer.parseInt(args[1]);	
 		System.out.println ("Sum of all numbers between 2 entered numbers is " + sum(a,b));
 	}
 }
