@@ -8,7 +8,6 @@ class fabrica
 		}
 		System.out.println("Total month consumption is "+consumption);
 		System.out.println();
-		
 	}
 	public static void printReport (employers [] mass)	{
 		for(int i = employers.getCount()-1; i > 0 ; i--)

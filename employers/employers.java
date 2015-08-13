@@ -15,7 +15,6 @@ public class employers
 	public employers (String surName, String name, int salary){
 		this(surName, name);
 		this.salary = salary;
-		INN = count;
 	}
 	public employers(){
 	}
