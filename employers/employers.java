@@ -1,27 +1,26 @@
-public class employers
+package fabrica;
+
+public class Employers implements Comparable <Employers>
 {
-	static private int count;
 	private int INN;
 	private String name;
 	private String surName;
 	private int salary;
 	
-	public employers (String surName, String name){
+	public Employers (int INN, String surName, String name){
 		this.name = name;
 		this.surName = surName;
-		count++;
-		INN = count;
+		this.INN = INN;
 	}
-	public employers (String surName, String name, int salary){
-		this(surName, name);
+	public Employers (int INN, String surName, String name, int salary){
+		this(INN, surName, name);
 		this.salary = salary;
 	}
-	public employers(){
+	public Employers(){
 	}
-	
-	public static int getCount () {
-		return count;
-	} 
+	public void setINN (int INN){
+		this.INN = INN;
+	}
 	public int getINN () {
 		return INN;
 	} 
@@ -45,5 +44,17 @@ public class employers
 	}
 	public int getSalary ()	{
 		return salary;
+	}
+	
+	public int compareTo(Employers o) {
+		if (INN < o.INN)
+		{
+			return -1;
+		} 
+		else if (INN > o.INN)
+		{
+			return 1;
+		}
+		return 0;
 	}
 }
